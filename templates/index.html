@@ -9,6 +9,8 @@
     	<script src="//hello.myfonts.net/count/2fccc3" async></script>
         <link rel="stylesheet" href="static/css/styles.css">
 		<link rel="stylesheet" href="static/css/bootstrap.css">
+		<meta name="author" content="Barionix">
+		<meta name="author" content="cogumm">
     	<meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Clash Royale is a real-time multiplayer game starring the Royales, your favorite Clash of Clans characters and much, much more.">
         <meta name="keywords" content="Clash Royale, Mobile, iOS, beta, App, Strategy, Pvp, card, Clans, game, iPhone, Supercell, Official, Download, Install, Play, Free, iPad, Combat, Compete, duel, collect">
@@ -85,46 +87,33 @@
                     <!--Start Community Row-->
                     <div class="section section-homepage section-homepage-community">
                         <div class="home-community-content">
-                            <h2>Random das cartas</h2>
+                            <h1>Random das cartas</h1>
                             <br />
-
 	                            <div class="section-wrapper">
-
 	                                <!-- aqui vem as cartas -->
-																	{% for carta in cartas %}
-
-			                                <div class="home-news-primary-item-holder">
-
-			                                    <img src="{{ carta }}" alt="Play Video">
-																			</div>
-
-
+									{% for carta in cartas %}
+		                                <div class="home-news-primary-item-holder">
+		                                    <img src="{{ carta }}" alt="Cartas">
+										</div>
 	                              	{% endfor %}
-																	</br>
-																	{% for deck in cartas2 %}
-
-			                                <div class="home-news-primary-item-holder">
-
-			                                    <img src="{{ deck }}" alt="Play Video">
-																			</div>
-
-
+										</br>
+										{% for deck in cartas2 %}
+		                                <div class="home-news-primary-item-holder">
+    	                                    <img src="{{ deck }}" alt="Cartas">
+										</div>
 	                              	{% endfor %}
 	                                <!-- até aqui -->
-															</div>
-
-
+								</div>
 
                             <a href="/" class="button-primary js-click" data-category="Sorteio" data-label="Sorteio">
                                 Sortear Deck
                             </a>
+                            <br />
                         </div>
                     </div>
                     <!--End Community Row-->
                 </div>
-
 	            <!-- yield end -->
-
 	            <!-- footer start -->
 	            <footer class="Footer" ref="Footer">
                     <div class="Footer-wrapper">
